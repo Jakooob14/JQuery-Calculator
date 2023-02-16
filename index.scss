@@ -1,0 +1,20 @@
+@use 'sass:color';
+
+.operations {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: min-content;
+  li{
+    background-color: lightgray;
+    padding: 1rem;
+    margin: .2rem;
+    cursor: default;
+    &:hover{
+      background-color: color.adjust(lightgray, $lightness: 7%);
+    }
+    &:active{
+      background-color: color.adjust(lightgray, $lightness: 10%);
+    }
+  }
+}
