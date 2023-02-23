@@ -10,6 +10,12 @@
     padding: 1rem;
     margin: .2rem;
     cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.back{
+      padding: .7rem;
+    }
     &:hover{
       background-color: color.adjust(lightgray, $lightness: 7%);
     }

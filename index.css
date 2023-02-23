@@ -9,6 +9,12 @@
   padding: 1rem;
   margin: 0.2rem;
   cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.operations li.back {
+  padding: 0.7rem;
 }
 .operations li:hover {
   background-color: #e5e5e5;
