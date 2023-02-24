@@ -1,26 +1,77 @@
 @use 'sass:color';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #daf0ff !important;
+}
+.title {
+  color: rgb(52, 101, 210);
+  font-weight: 500;
+  text-align: center;
+}
+.calculator {
+  box-shadow: 0 0 30px -15px  rgb(30, 46, 82);
+  margin: 0 auto;
+  border-radius: 16px;
+  background-color: #1f2126;
+  padding: 20px;
+  max-width: 400px;
+  height: 700px;
+  .area {
+    box-shadow: 0 0 30px 0px rgb(40, 47, 47);
+    border-radius: 12px;
+    background-color: rgb(25, 28, 33);
+    text-align: right;
+    height: 170px;
+    margin: 0 0 20px 0;
+    h3{
+      font-weight: 600;
+      padding: 8px 8px 0 8px;
+      color: rgb(52, 101, 210);
+      font-size: 16px;
+    }
+    h2 {
+      padding: 0 8px;
+      color: rgb(237, 238, 245);
+      font-size: 30px;
+    }
+  }
+  .grey {
+    background-color: rgb(44, 46, 51);
+  }
+  .light {
+    background-color: rgb(30, 46, 82);
+  }
+  .bold {
+    background-color: rgb(52, 101, 210);
+  }
+}
 
 .operations {
+  font-weight: 500;
+  height: 470px;
+  border-radius: 8px;
+  padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: min-content;
+  gap: 18px;
   li{
-    background-color: lightgray;
+    box-shadow: 0 0 15px 0px rgb(27, 33, 33);
+    cursor: pointer;
+    border-radius: 14px;
+    background-color: #0a0d13;
+    color: #e5f5f4;
     padding: 1rem;
-    margin: .2rem;
-    cursor: default;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 28px;
     &.back{
       padding: .7rem;
-    }
-    &:hover{
-      background-color: color.adjust(lightgray, $lightness: 7%);
-    }
-    &:active{
-      background-color: color.adjust(lightgray, $lightness: 10%);
     }
   }
 }
